@@ -7,12 +7,12 @@ json_array = json.load(input_file)
 finalArr = []
 allDate = []
 allName = []
-expectedDAte =  "2020-03"
+expectedDate =  "2020-03"
 
 def getDisplayNames(messages):
 	nameArr = []
 	for msg in messages:
-		if expectedDAte in msg["originalarrivaltime"][0:7]:
+		if expectedDate in msg["originalarrivaltime"][0:7]:
 			nameArr.append(msg["displayName"])
 	nameArr = list(set(nameArr))
 	return nameArr
@@ -20,7 +20,7 @@ def getDisplayNames(messages):
 def getUniqueDate(newMessages):
 	dateArr = []
 	for msg in newMessages:
-		if expectedDAte in msg["originalarrivaltime"][0:7]:
+		if expectedDate in msg["originalarrivaltime"][0:7]:
 			dateArr.append(msg["originalarrivaltime"][0:10])
 	dateArr = list(set(dateArr))
 	return dateArr
