@@ -1,0 +1,10 @@
+this file skype-messages.json is a JSON data file which contains Skype messages for a few Skype groups.
+
+1. I need a Google sheet (xlsx will also do) containing one worksheet per group
+2. For each group, the worksheet will have dates in columns and Skype users in rows
+3. Each cell will contain a number, the number being the count of Skype message that the specific user wrote in that group on that day
+
+Any scripting language Python, Javascript, etc. or any text utilities like AWK, GNU tools, shell script is fine.
+
+
+
